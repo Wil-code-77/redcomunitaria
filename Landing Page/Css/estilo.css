@@ -6,4 +6,151 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #f5f5f5;
+    padding-top: 30px; 
 }
+
+/*Estilos de los contenedores*/
+
+.img-fluid {
+    max-width: 100%;  
+    height: auto;    
+    display: block;
+    margin: auto;    
+}
+
+.col-md-4 {
+    display: flex;
+    justify-content: center;
+}
+
+img:last-of-type {
+    max-width: 70%; 
+    height: auto;
+    
+}
+
+/*Estilos de la tipografía*/
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ff5733;
+}
+
+/*Estilos navbar*/
+
+.bg-dark-blue {
+    background: linear-gradient(90deg, #FFD700 0%, #FFD700 33%, #0033A0 66%, #CE1126 100%);
+}
+
+.navbar-brand, 
+.navbar-nav .nav-link {
+    font-weight: bold;      /* Negrilla */
+    text-decoration: none;  /* Sin subrayado por defecto */
+    color: white !important; /* Color blanco */
+    transition: color 0.3s ease-in-out; /* Transición suave */
+}
+
+.navbar-brand:hover, 
+.navbar-nav .nav-link:hover {
+    text-decoration: none; /* Subrayado al pasar el mouse */
+    color: #ff5733 !important;  /* Color naranja al pasar el mouse */
+}
+
+.navbar {
+    position: fixed; /* Fijar la barra en la parte superior */
+    top: 0; /* Asegurar que esté pegada arriba */
+    width: 100%; /* Ocupar todo el ancho */
+    z-index: 1000; /* Asegurar que quede por encima de otros elementos */
+}
+
+/*Estilos de la sección de portada*/
+
+#Portada {
+    background: url('../images/colombia.jpg') no-repeat center center;
+    background-size: cover; /* La imagen cubre toda la sección */
+    background-attachment: fixed; /* Efecto parallax (opcional) */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    height: 50vh; /* Ocupa toda la altura de la pantalla */
+    font-weight: bold; 
+    color: white; /* Texto blanco */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra al texto */
+    text-align: center; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Estilos generales de las noticias */
+.noticia-card {
+    display: block;
+    text-decoration: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Contenedor de la noticia */
+.noticia-content {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Ajusta la altura */
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Quita el subrayado de los enlaces */
+.noticia-card a {
+    text-decoration: none !important; /* Elimina cualquier subrayado */
+    color: inherit; /* Mantiene el color original */
+}
+
+/* Asegurar que tampoco en hover tenga subrayado */
+.noticia-card:hover a {
+    text-decoration: none !important;
+}
+
+/* Efecto hover: escala la card y cambia el color del texto */
+.noticia-card:hover {
+    transform: scale(1.05); /* Efecto de expansión */
+    text-decoration: none !important;
+}
+
+/* Envolver los textos dentro de un div para escalar uniformemente */
+.noticia-texto {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Cambia el color y escala de forma uniforme */
+.noticia-card:hover .noticia-texto {
+    transform: scale(1.1); /* Escala todo el contenido */
+    color: #ff5733;
+}
+
+
+
+
+
+
+
+
+
+
