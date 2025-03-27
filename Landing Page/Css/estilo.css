@@ -159,3 +159,68 @@ a:hover {
   transform: scale(1.1); /* Escala todo el contenido */
   color: #ff5733;
 }
+
+/* Estilos de la sección Conceptos 🚀 */
+
+/* Contenedor con flexbox para distribución en dos filas */
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; /* Espacio entre tarjetas */
+}
+
+/* Tarjetas de concepto */
+.concepto-card {
+  background-color: #ffffff;
+  border: 2px solid #ff5733;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  width: 180px; /* Tamaño fijo para todas */
+  min-height: 60px; /* Asegura altura uniforme */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ocultar la descripción por defecto */
+.concepto-card p {
+  opacity: 0;
+  height: 0;
+  margin: 0;
+  transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+/* Efecto hover: mostrar la descripción */
+.concepto-card:hover {
+  background-color: #ff5733;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(255, 87, 51, 0.5);
+  min-height: 140px; /* Expande la altura */
+}
+
+/* Mostrar la descripción al hacer hover */
+.concepto-card:hover p {
+  opacity: 1;
+  height: auto;
+  margin-top: 10px;
+  text-align: justify; /* Justificación del texto */
+  font-size: 14px;
+}
+
+/* Responsive para hacer más compacto en móviles */
+@media (max-width: 768px) {
+  .concepto-card {
+    width: 100%;
+    max-width: 250px;
+  }
+}
