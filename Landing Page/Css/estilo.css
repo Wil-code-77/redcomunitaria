@@ -223,3 +223,21 @@ a:hover {
     max-width: 250px;
   }
 }
+
+/*Estilos de la sección de historias*/
+
+/* 📌 Imagen centrada con Bootstrap */
+.historia-img {
+  width: 650px;
+  height: 650px;
+  object-fit: cover; /* Evita distorsión */
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 📌 Efecto hover */
+.historia-img:hover {
+  transform: scale(1.1);
+  box-shadow: #ff5733 0px 0px 20px;
+}
