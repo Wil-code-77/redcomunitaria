@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -39,23 +38,22 @@ body {
   clear: both;
 }
 
-/* Style the footer */
-.footer {
-  background-color: #f1f1f1;
-  padding: 10px;
+.gradiente-tres-colores {
+  background-image: linear-gradient(
+    to right,
+    #fbf26a,
+    #6a87fb,
+    #fb6a6a
+  ); /* Cambia los colores a tu gusto */
+  padding: 1rem; /* Ajusta el padding según sea necesario */
+  border-radius: 0.5rem; /* Ajusta el radio del borde según sea necesario */
   text-align: center;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .column.side, .column.middle {
-    width: 100%;
-  }
-}
-
-.gradiente-tres-colores {
-    background-image: linear-gradient(to right,#fbf26a, #6a87fb,#fb6a6a); /* Cambia los colores a tu gusto */
-    padding: 1rem; /* Ajusta el padding según sea necesario */
-    border-radius: 0.5rem; /* Ajusta el radio del borde según sea necesario */
-    text-align: center;
+.carousel-inner img {
+  width: 500px; /* Ancho fijo */
+  height: 500px; /* Alto fijo */
+  object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+  margin: auto; /* Centra las imágenes dentro del contenedor */
+  border-radius: 15px; /* Esquinas redondeadas opcionales */
 }
