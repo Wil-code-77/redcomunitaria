@@ -22,6 +22,7 @@ new Chart("myChart", {
     labels: xValues,
     datasets: [
       {
+        label: "Ocultar Grafico",
         backgroundColor: barColors,
         data: yValues,
       },

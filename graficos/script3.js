@@ -1,24 +1,56 @@
-const xxxValues = [100,200,300,400,500,600,700,800,900,1000];
+const xxxValues = [2018, 2019, 2020, 2021, 2022, 2023];
 
 new Chart("myChart3", {
   type: "line",
   data: {
     labels: xxxValues,
-    datasets: [{ 
-      data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
-      borderColor: "red",
-      fill: false
-    }, { 
-      data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
-      borderColor: "green",
-      fill: false
-    }, { 
-      data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
-      borderColor: "blue",
-      fill: false
-    }]
+    datasets: [
+      {
+        label: "Tecnología",
+        data: [300, 700, 2000, 5000, 6000, 7000],
+        borderColor: "blue",
+        fill: false,
+      },
+      {
+        label: "Comercio",
+        data: [1600, 1700, 1700, 1900, 2000, 2700],
+        borderColor: "green",
+        fill: false,
+      },
+      {
+        label: "Gastronomía",
+        data: [860, 1140, 1060, 1060, 1070, 1110],
+        borderColor: "red",
+        fill: false,
+      },
+      {
+        label: "Salud y Bienestar",
+        data: [500, 800, 1500, 2500, 3500, 4500],
+        borderColor: "purple",
+        fill: false,
+      },
+      {
+        label: "Educación",
+        data: [400, 600, 1200, 2200, 2800, 3600],
+        borderColor: "orange",
+        fill: false,
+      },
+    ],
   },
   options: {
-    legend: {display: false}
-  }
+    responsive: true,
+    plugins: {
+      title: {
+        display: true,
+        text: "Crecimiento del emprendimiento en Colombia por sector (2018-2023)",
+        font: {
+          size: 18,
+        },
+      },
+      legend: {
+        display: true,
+        position: "top",
+      },
+    },
+  },
 });
