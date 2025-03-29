@@ -1,4 +1,5 @@
 # redcomunitaria
+
 Red Comunitaria
 
 Objetivo
@@ -26,5 +27,3 @@ Fomento de iniciativas de emprendimiento e innovación.
 Tecnologías Utilizadas
 
 HTML, CSS, JavaScript
-
-Frameworks y librerías modernas (React).
