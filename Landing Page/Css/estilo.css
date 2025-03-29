@@ -241,3 +241,11 @@ a:hover {
   transform: scale(1.1);
   box-shadow: #ff5733 0px 0px 20px;
 }
+
+/* ✳️ Estilos para campo requerido en formulario */
+
+label.required::after {
+  content: "  (*) ";
+  color: red;
+  font-weight: normal;
+}

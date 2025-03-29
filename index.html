@@ -391,36 +391,191 @@
     </section>
 
     <!-- 🚀 Sección 5: Encuesta sobre Emprendimiento -->
-    <section id="encuesta" class="bg-light">
+    <section id="encuesta" class="bg-light py-5">
       <div class="container">
-        <h2 class="text-center">Encuesta sobre Emprendimiento</h2>
-        <form>
-          <div class="mb-3">
-            <label class="form-label"
+        <h2 class="text-center mb-5">Encuesta sobre Emprendimiento</h2>
+        <form id="formEncuesta" class="row g-3">
+          <!-- Pregunta 9 -->
+          <div class="col-md-6">
+            <label class="form-label required">Nombre Completo</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Escribe tu nombre y apellidos"
+            />
+          </div>
+          <!-- Pregunta 1 -->
+          <div class="col-md-6">
+            <label class="form-label required">¿Cuál es tu edad?</label>
+            <input
+              type="number"
+              class="form-control"
+              placeholder="Ingrese su edad"
+              required
+            />
+          </div>
+          <!-- Pregunta 11 -->
+          <div class="col-md-6">
+            <label class="form-label required">Correo Electrónico</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Ingrese su correo"
+              required
+            />
+          </div>
+          <!-- Pregunta 12 -->
+          <div class="col-md-6">
+            <label class="form-label required">Número de Teléfono</label>
+            <input
+              type="tel"
+              class="form-control"
+              placeholder="Ingrese su teléfono"
+              required
+            />
+          </div>
+          <!-- Pregunta 2 -->
+          <div class="col-md-6">
+            <label class="form-label required"
               >¿Cuántas personas conforman tu emprendimiento?</label
             >
-            <select class="form-select">
+            <select class="form-select" required>
+              <option value="">Seleccione una opción</option>
               <option>1-5</option>
               <option>6-10</option>
               <option>11-20</option>
               <option>Más de 20</option>
             </select>
           </div>
-          <div class="mb-3">
-            <label class="form-label">¿En qué sector emprendes?</label>
-            <select class="form-select">
+          <!-- Pregunta 3 -->
+          <div class="col-md-6">
+            <label class="form-label required">¿En qué sector emprendes?</label>
+            <select class="form-select" required>
+              <option value="">Seleccione una opción</option>
               <option>Tecnología</option>
               <option>Comercio</option>
               <option>Salud</option>
               <option>Educación</option>
             </select>
           </div>
-          <button type="submit" class="btn btn-primary w-100">
-            Enviar Respuesta
-          </button>
+          <!-- Pregunta 6 -->
+          <div class="col-md-6">
+            <label class="form-label required"
+              >¿Has recibido apoyo financiero?</label
+            >
+            <select class="form-select" required>
+              <option value="">Seleccione una opción</option>
+              <option>Sí</option>
+              <option>No</option>
+            </select>
+          </div>
+          <!-- Pregunta 5 -->
+          <div class="col-md-6">
+            <label class="form-label required"
+              >¿Tu emprendimiento genera empleo?</label
+            >
+            <select class="form-select" required>
+              <option value="">Seleccione una opción</option>
+              <option>Sí</option>
+              <option>No</option>
+            </select>
+          </div>
+          <!-- Pregunta 8 -->
+          <div class="col-md-6">
+            <label class="form-label"
+              >¿Cuál es tu mayor motivación para emprender?</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Ingrese su motivación"
+            />
+          </div>
+          <!-- Pregunta 4 -->
+          <div class="col-md-6">
+            <label class="form-label required"
+              >¿Cuántos años llevas con tu emprendimiento?</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              placeholder="Ingrese los años"
+              required
+            />
+          </div>
+
+          <!-- Pregunta 7 -->
+          <div class="col-md-6">
+            <label class="form-label">¿Qué obstáculos has enfrentado?</label>
+            <textarea
+              class="form-control"
+              rows="3"
+              placeholder="Describa los obstáculos"
+            ></textarea>
+          </div>
+
+          <!-- Pregunta 10 -->
+          <div class="col-md-6">
+            <label class="form-label"
+              >¿Qué recursos adicionales te gustaría recibir?</label
+            >
+            <textarea
+              class="form-control"
+              rows="3"
+              placeholder="Escriba los recursos deseados"
+            ></textarea>
+          </div>
+
+          <div class="row align-items-center">
+            <!-- Checkbox de términos y condiciones -->
+            <div class="col-md-6">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="aceptoTerminos"
+                />
+                <label class="form-check-label" for="aceptoTerminos">
+                  Acepto los términos y condiciones
+                </label>
+              </div>
+            </div>
+            <!-- Texto de campos requeridos alineado -->
+            <div class="col-md-6 text-center mt-5">
+              <p class="campos">
+                <span class="text-danger">(*)</span> Campos requeridos
+              </p>
+            </div>
+            <!-- Aceptación de tratamiento de datos -->
+            <div class="col-12">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="aceptoDatos"
+                />
+                <label class="form-check-label" for="aceptoDatos">
+                  Acepto el tratamiento de mis datos personales
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- Botón de enviar -->
+          <div class="col-12 text-center mt-4">
+            <button
+              type="submit"
+              class="btn btn-outline-success w-50"
+              id="btnEnviar"
+              disabled
+            >
+              Enviar Respuesta
+            </button>
+          </div>
         </form>
       </div>
     </section>
+
+    <script src="./Landing Page/Js/formulario.js"></script>
 
     <!-- 🚀 Footer -->
     <footer class="text-center p-3 bg-dark text-white">
